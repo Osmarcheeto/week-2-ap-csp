@@ -1,68 +1,93 @@
-name ="your name"
 
-# Algorithm: A step-by-step set of instructions designed to perform a specific task.
-# Example Algorithm: Find the sum of two numbers
+# ----------------------------------------
+# . Working with Strings
+# ----------------------------------------
 
-# Step 1: Start
-# Step 2: Define two numbers
-# Step 3: Add them together
-# Step 4: Display the result
-# Step 5: End
-
-# Let's write that algorithm in Python code:
-num1 = 5 #integer
-num2 = 7 #integer
-num3 = int(input("Enter a number"))
-sum_result = num1 + num2
-print("The sum is:", sum_result)
-
+# Strings are sequences of characters enclosed in quotes (' ' or " ")
+# greeting = "Hello"
+# name = "World"
 
 # # ----------------------------------------
-# # Variables and Data Types
+# # Basic String Operations
 # # ----------------------------------------
 
-# # Variables: Containers for storing data values
-# # Variables can hold different types of data
+# # 1. Concatenation: Combining strings using the + operator
+# message = greeting + " " + name
+# print("Concatenated String:", message)  # Output: Hello World
 
-# # Common Data Types in Python:
+# ----------------------------------------
+# 2. String Functions
+# ----------------------------------------
 
-# # 1. Strings: Text data enclosed in quotes
-name = "John"
-print("Name:", name)
+phrase = "Python is FUN!"
+name =  "OSMAR"
+# # # Convert all characters to lowercase
+# # print("Lowercase:", phrase.lower())  # Output: python is fun!
+# # print("lowercase:", name.lower())
+# # # Convert all characters to uppercase
+# # print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
+# print("Uppercase name:", name.upper())
+# print("Uppercase name:", name.capitalize())
+# # # Check if all characters are uppercase
+# print("Is Uppercase?", phrase.isupper())  # Output: False
 
-# # 2. Numbers: Numeric data (integers or floats)
-age = 23
-print("Age:", age)
-
-# # 3. Booleans: True or False values
-hungry = False
-print("Hungry:", hungry)
-
-
-# # Example combining them all:
-print(f"{name} is {age} years old. Hungry? {hungry}")
-
+# # # Find the length of the string
+# print("Length of phrase:", len(phrase))  # Output: 14
 
 # # ----------------------------------------
-# # Variable Naming Rules
+# # 3. Indexing and Slicing
+# # ----------------------------------------
+chicago_mayor = "Johnson"
+# # Indexing: Access characters by position (0-based index)clear
+print("First character of mayor", chicago_mayor[0])
+print("Last letter of mayor's name:", chicago_mayor[-1])
+# print("First character:", phrase[0])  # Output: P
+# print("Last character:", phrase[-1])  # Output: !
+# get john
+print("First four letters of mayors name:", chicago_mayor[0:7])
+print("First 3 letters of Name is", name[0:3])
+poppins = "supercalifragilisticexpialidocious"
+print(poppins)
+print("Uppercase", poppins.upper())
+print("Print out super", poppins[0:5])
+print("Print out docious", poppins[27:34])
+print(len(poppins))
+declaration_of_independece = "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness." 
+# # Slicing: Get a range of characters (start inclusive, end exclusive)
+# print("Characters 1 to 4:", phrase[1:4])  # Output: yth
+
+# # Example combining everything:
+# print("Formatted Example:", (greeting + " " + name + "!").upper())
+# # Output: HELLO WORLD!
+
+# # ----------------------------------------
+# # 7. Strings: Advanced Concepts
 # # ----------------------------------------
 
-# # 1. Names cannot start with a number
-# # Example (INVALID): 1name = "John" ❌
-# # Example (VALID):
-# name1 = "John"
+# # Creating Strings: use single or double quotes
+# greeting1 = 'Hello'
+# greeting2 = "Hi there"
 
-# # # 2. No spaces — use underscores instead
-# # # Example (INVALID): first name = "John" ❌
-# # # Example (VALID):
-# # first_name = "John"
+# # Printing Strings
+# print(greeting1)
+# print(greeting2)
 
-# # # 3. Avoid using Python keywords and symbols
-# # # Example (INVALID): for = "test" ❌ (since 'for' is a Python keyword)
-# # # Example (VALID):
-# # loop_word = "test"
+# # ----------------------------------------
+# # String Methods
+# # ----------------------------------------
 
-# # print("Variable naming rules followed successfully!\n")
-# # # ----------------------------------------
+# sentence = "Python is fun to learn"
 
-# # # End of 1_variables_and_datatypes.py
+# # .split(): Splits the string into a list of words
+# words = sentence.split()
+# print("Split result:", words)
+
+# # .format(): Allows inserting values into strings using {}
+# name = "Marvin"
+# age = 35
+# intro = "My name is {} and I am {} years old.".format(name, age)
+# print(intro)
+
+# # You can also use f-strings (Python 3.6+)
+# intro_fstring = f"My name is {name} and I am {age} years old."
+# print(intro_fstring)
