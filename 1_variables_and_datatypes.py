@@ -22,17 +22,17 @@
 phrase = "Python is FUN!"
 name =  "OSMAR"
 # # # Convert all characters to lowercase
-# # print("Lowercase:", phrase.lower())  # Output: python is fun!
-# # print("lowercase:", name.lower())
+print("Lowercase:", phrase.lower())  # Output: python is fun!
+print("lowercase:", name.lower())
 # # # Convert all characters to uppercase
-# # print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
-# print("Uppercase name:", name.upper())
-# print("Uppercase name:", name.capitalize())
+print("Uppercase:", phrase.upper())  # Output: PYTHON IS FUN!
+print("Uppercase name:", name.upper())
+print("Uppercase name:", name.capitalize())
 # # # Check if all characters are uppercase
-# print("Is Uppercase?", phrase.isupper())  # Output: False
+print("Is Uppercase?", phrase.isupper())  # Output: False
 
 # # # Find the length of the string
-# print("Length of phrase:", len(phrase))  # Output: 14
+print("Length of phrase:", len(phrase))  # Output: 14
 
 # # ----------------------------------------
 # # 3. Indexing and Slicing
@@ -41,8 +41,8 @@ chicago_mayor = "Johnson"
 # # Indexing: Access characters by position (0-based index)clear
 print("First character of mayor", chicago_mayor[0])
 print("Last letter of mayor's name:", chicago_mayor[-1])
-# print("First character:", phrase[0])  # Output: P
-# print("Last character:", phrase[-1])  # Output: !
+print("First character:", phrase[0])  # Output: P
+print("Last character:", phrase[-1])  # Output: !
 # get john
 print("First four letters of mayors name:", chicago_mayor[0:7])
 print("First 3 letters of Name is", name[0:3])
