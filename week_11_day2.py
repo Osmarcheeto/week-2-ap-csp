@@ -9,8 +9,8 @@ print("You’ll review variables, strings, numbers, and print formatting.\n")
 
 # Step 1: Create Variables
 # TODO: Replace the values below with your own info
-first_name = "Marvin"
-age = 30
+first_name = "Osmar"
+age = 16
 favorite_color = "Blue"
 favorite_number = 7
 
@@ -19,17 +19,22 @@ favorite_number = 7
 
 
 # 2. Print how many letters are in your name
-
+print(len(first_name))
 
 # 3. Combine your name and favorite color into one message
 
 
 #  Step 3: Math Practice
 # Use arithmetic operators with your favorite number
-
+print(str(16) + str(7))
 
 #  Step 4: User Input Practice
 # Ask the user two questions and combine answers
+number = input("Pick a number? ")
+print("Your number is: " + number)
+number_1 = input("Pick another number")
+print()
+
 
 
 
